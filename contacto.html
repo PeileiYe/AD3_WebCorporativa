@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Contacto</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="#">Publicaciones</a></li>
+        <li><a href="servicios.html">Áreas de actuación</a>
+          <ul class="submenu">
+            <li><a href="#">Traducción</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Organización de eventos</a></li>
+            <li><a href="#">Consultoría</a></li>
+            <li><a href="#">Turismo</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Localización</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main_text">
+      <h1>Formulario de Contacto</h1>
+      <p>¿Deseas contratar alguno de nuestros servicios o dejarnos tus comentarios?</p>
+      <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+      <form action="#" method="post" class="formulario_contacto">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefono">Teléfono (opcional):</label>
+        <input type="tel" id="telefono" name="telefono" />
+
+        <label for="servicio">Tipo de servicio que necesita:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="traduccion">Traducción</option>
+          <option value="formacion">Formación en idiomas</option>
+          <option value="consultoria">Consultoría</option>
+          <option value="turismo">Guía turística</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="7" placeholder="Indícanos los detalles del servicio que necesita contratar o deja tu feedback" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="home">
+    <div class="footer_content">
+      <div class="info">
+        <h3>Nuestra Empresa</h3>
+        <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        <p>CIF: B0011223344 | Madrid, España</p>
+      </div>
+      <div class="contact">
+        <h4>Contacto</h4>
+        <p>Email: contacto@miempresa.com</p>
+        <p>Tel: +34 912 345 678</p>
+      </div>
+      <div class="links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="#">Publicaciones</a></li>
+          <li><a href="servicios.html">Áreas de actuación</a></li>
+          <li><a href="#">Localización</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="redes_sociales">
+        <ul class="redesSociales">
+          <li><a href="#"><ion-icon name="mail"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
