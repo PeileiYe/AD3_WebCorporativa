@@ -11,11 +11,11 @@ hover: for button & icon hover
 
 */
 :root{
-    --primary--:rgb(18, 56, 56);
-    --hover--:rgb(99, 136, 144);
-    --orange--:rgb(228, 162, 86);
-    --yellow--:rgb(239, 207, 148);
-    --soft_black--:#333333;
+    --primary:rgb(18, 56, 56);
+    --hover:rgb(99, 136, 144);
+    --orange:rgb(228, 162, 86);
+    --yellow:rgb(239, 207, 148);
+    --soft_black:#333333;
 }
 
 *{
@@ -58,14 +58,14 @@ nav .submenu{
 }
 
 nav li a{
-    color:var(--soft_black--);
+    color:var(--soft_black);
     padding: 10px 15px;
     display: block;
     text-decoration: none;
 }
 
 nav li a:hover{
-    color:var(--orange--);
+    color:var(--orange);
     transition: 0.5s;
 }
 
@@ -88,7 +88,7 @@ nav li ul li{
 
 nav #button_registrar{
     width: 100px;
-    background-color: var(--orange--);
+    background-color: var(--orange);
     color:white;
     font-weight: 600;
     text-align: center;
@@ -105,7 +105,7 @@ nav #button_registrar:hover{
 nav #button_iniciar{
     width: 100px;    
     background-color: white;
-    border: 1px var(--soft_black--) solid;
+    border: 1px var(--soft_black) solid;
     color:var(--orange--);
     font-weight: 600;
     padding: 10px 15px;
@@ -113,13 +113,13 @@ nav #button_iniciar{
 }
 
 nav #button_iniciar:hover{
-    background-color: var(--hover--);
+    background-color: var(--hover);
     color:white;
     transition: 0.5s;
 }
 
 nav .icon{
-    color: var(--orange--);
+    color: var(--orange);
 }
 
 /********************************* HOME ************************************/
@@ -131,7 +131,7 @@ main.home {
 
 main.home .main_text{
     display: flex;
-    background-color: var(--primary--);
+    background-color: var(--primary);
     min-height:500px ;
     color: white;
 }
@@ -180,7 +180,7 @@ main.home .main_text{
     position: absolute;
     top: 50px;
     left: 400px; /* move right */
-    background-color: var(--hover--);
+    background-color: var(--hover);
     opacity: 0.8;
 }
   
@@ -189,7 +189,7 @@ main.home .main_text{
     height: 300px;
     top: 20px;
     left: 60px;
-    background-color: var(--yellow--);
+    background-color: var(--yellow);
     opacity: 1;
 }
 
@@ -198,7 +198,7 @@ main.home .main_text{
     height: 200px;
     top: -50px;
     left: 300px;
-    background-color: var(--orange--);
+    background-color: var(--orange);
     opacity: 1;
 }
 
@@ -236,7 +236,7 @@ main.home .main_text{
 }
 
 .noticias h2 {
-    background-color: var(--hover--);
+    background-color: var(--hover);
     width: 95%;
     padding-left:5px;
     color: white;
@@ -250,7 +250,7 @@ main.home .main_text{
       
 }
 .noticias h4 {
-    color: (var(--primary--));
+    color: var(--primary);
     font-size: 1rem;
     text-align: right; 
        
@@ -258,11 +258,11 @@ main.home .main_text{
 
 .noticias a{
     text-decoration: none;    
-    color:var(--soft_black--);
+    color:var(--soft_black);
 }
 
 .noticias a:hover{
-    color:var(--orange--);
+    color:var(--orange);
     transition: all 0.3s;
 }
 
@@ -276,7 +276,7 @@ main.home .main_text{
     display: flex ;
     gap: 100px;
     padding: 100px 100px;
-    background-color:var(--soft_black--);
+    background-color:var(--soft_black);
     font-family:"Raleway", sans-serif;
     color: white;
   }
@@ -289,7 +289,7 @@ main.home .main_text{
   }
   
   .footer_content a:hover {
-    color:var(--orange--);
+    color:var(--orange);
     transition: all 0.3s ;
   }
 
@@ -305,7 +305,7 @@ main.home .main_text{
     justify-content: space-between;
     gap:100px;
     padding: 40px 100px;
-    background-color: var(--soft_black--);
+    background-color: var(--soft_black);
     font-size: 0.9rem;
     font-family:"Raleway", sans-serif;
     color: white;
@@ -323,8 +323,7 @@ main.home .main_text{
   }
 
   .footer_bottom .redesSociales a:hover{
-  
-    color:var(--orange--);
+    color:var(--orange);
     transition: all 0.3s;
   }
 
