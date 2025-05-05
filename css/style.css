@@ -1,0 +1,330 @@
+
+/* font-family: "Lora", serif;
+ font-family: "Open Sans", sans-serif;
+ font-family: "Raleway", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*color: 
+orange: for button & icon
+hover: for button & icon hover
+
+*/
+:root{
+    --primary--:rgb(18, 56, 56);
+    --hover--:rgb(99, 136, 144);
+    --orange--:rgb(228, 162, 86);
+    --yellow--:rgb(239, 207, 148);
+    --soft_black--:#333333;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+header{
+    margin:auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family:"Raleway", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+nav .menu{
+    margin-top:20px;
+    text-align: center;}
+
+nav .submenu{
+    background-color: white;
+    
+}
+
+nav li a{
+    color:var(--soft_black--);
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:var(--orange--);
+    transition: 0.5s;
+}
+
+nav .menu >li {
+    display: inline-block;
+    min-width: 100px;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li ul li{
+    position:relative;
+}
+
+nav #button_registrar{
+    width: 100px;
+    background-color: var(--orange--);
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 15px;
+    margin-left: 40px;
+}
+
+nav #button_registrar:hover{
+    background-color: white;
+    color:var(--soft_black--);
+    transition: 0.5s;
+}
+
+nav #button_iniciar{
+    width: 100px;    
+    background-color: white;
+    border: 1px var(--soft_black--) solid;
+    color:var(--orange--);
+    font-weight: 600;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+nav #button_iniciar:hover{
+    background-color: var(--hover--);
+    color:white;
+    transition: 0.5s;
+}
+
+nav .icon{
+    color: var(--orange--);
+}
+
+/********************************* HOME ************************************/
+
+main.home {
+    margin-top: 100px; /* ajusta según la altura de header */
+    font-family:"Raleway", sans-serif;
+  }
+
+main.home .main_text{
+    display: flex;
+    background-color: var(--primary--);
+    min-height:500px ;
+    color: white;
+}
+  
+.main_text h1{
+    font-size:2rem;
+    line-height: 3rem;
+}
+
+.main_text h3{
+    font-size:1.2rem;
+    line-height: 2rem;
+}
+.main_text p{
+    line-height: 1.5rem;
+}
+
+.main_text .texto {
+    width: 50%;
+    padding: 40px 40px 20px;
+    box-sizing: border-box;
+}
+
+.main_text .decoration {
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* circulos de decoracion para la foto*/
+.circleBox {
+    position: relative;
+    width: 100%;
+    height: 300px; /* adjust as needed */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+  
+ 
+.circle.big {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 50px;
+    left: 400px; /* move right */
+    background-color: var(--hover--);
+    opacity: 0.8;
+}
+  
+.circle.medium {
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: 60px;
+    background-color: var(--yellow--);
+    opacity: 1;
+}
+
+.circle.small {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: 300px;
+    background-color: var(--orange--);
+    opacity: 1;
+}
+
+/* galleria de fotos y noticias*/
+
+.foto_noticia {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 10px;
+}
+
+
+.fotos {
+    width: 60%; 
+    display: grid;
+    margin-left: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+  
+.fotos img {
+    width: 200Px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+.noticias {
+    width: 40%; 
+    overflow: visible;     
+}
+
+.noticias h2 {
+    background-color: var(--hover--);
+    width: 95%;
+    padding-left:5px;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 3rem;   
+}
+
+.noticias h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+      
+}
+.noticias h4 {
+    color: (var(--primary--));
+    font-size: 1rem;
+    text-align: right; 
+       
+}
+
+.noticias a{
+    text-decoration: none;    
+    color:var(--soft_black--);
+}
+
+.noticias a:hover{
+    color:var(--orange--);
+    transition: all 0.3s;
+}
+
+/*Footer*/
+.footerBox {
+    width: 100%; /* or 1000px, adjust as needed */
+    margin: 0 auto;
+  }
+
+.footer_content {
+    display: flex ;
+    gap: 100px;
+    padding: 100px 100px;
+    background-color:var(--soft_black--);
+    font-family:"Raleway", sans-serif;
+    color: white;
+  }
+
+  .footer_content a {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer_content a:hover {
+    color:var(--orange--);
+    transition: all 0.3s ;
+  }
+
+  .footer_content h3{
+    font-size: 1rem;
+    line-height: 2rem;
+
+  }
+
+  .footer_bottom {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap:100px;
+    padding: 40px 100px;
+    background-color: var(--soft_black--);
+    font-size: 0.9rem;
+    font-family:"Raleway", sans-serif;
+    color: white;
+  }
+  
+  .footer_bottom .redesSociales {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+
+  .footer_bottom .redesSociales a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .footer_bottom .redesSociales a:hover{
+  
+    color:var(--orange--);
+    transition: all 0.3s;
+  }
+
