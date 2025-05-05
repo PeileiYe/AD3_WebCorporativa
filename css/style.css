@@ -515,9 +515,11 @@ main.contacto  p {
   
 .formulario .privacidad {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     color: var(--soft_black);
     font-size: 0.9rem;
-    gap:2px;
+    gap:4px;
 
   }
   
@@ -526,7 +528,6 @@ main.contacto  p {
     font-size: 0.9rem;
     padding:0px;
     width: 4%;
-    
   }
 
 .formulario .privacidad a {
@@ -556,10 +557,8 @@ main.contacto  p {
     text-align: center;
     font-weight: 600;
     font-size: 16px;
-    border: none;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
   }
   
 .formulario button:hover {
