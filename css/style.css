@@ -12,7 +12,7 @@ hover: for button & icon hover
 */
 :root{
     --primary:rgb(18, 56, 56);
-    --hover:rgb(99, 136, 144);
+    --blue:rgb(99, 136, 144);
     --orange:rgb(228, 162, 86);
     --yellow:rgb(239, 207, 148);
     --soft_black:#333333;
@@ -32,6 +32,7 @@ body{
     box-sizing: border-box;
 }
 
+/************************************************************* HEADER ********************************************************/
 header{
     margin:auto;
     position: fixed;
@@ -41,7 +42,6 @@ header{
     height: 100px;
     z-index: 1000;
     background-color: white; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family:"Raleway", sans-serif;
 }
 
@@ -54,6 +54,7 @@ nav .menu{
 
 nav .submenu{
     background-color: white;
+    text-align: left;
     
 }
 
@@ -113,7 +114,7 @@ nav #button_iniciar{
 }
 
 nav #button_iniciar:hover{
-    background-color: var(--hover);
+    background-color: var(--blue);
     color:white;
     transition: 0.5s;
 }
@@ -122,7 +123,74 @@ nav .icon{
     color: var(--orange);
 }
 
-/********************************* HOME ************************************/
+/******************************************************* Footer*************************************************************/
+.footerBox {
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+.footer_content {
+    display: flex ;
+    gap: 100px;
+    padding: 100px 100px;
+    background-color:var(--soft_black);
+    font-family:"Raleway", sans-serif;
+    color: white;
+  }
+.footer_content .titulo{
+    color:var(--orange);
+    line-height: 2rem;
+
+}
+
+.footer_content a {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+    color: white;
+}
+  
+.footer_content a:hover {
+    color:var(--orange);
+    transition: all 0.3s ;
+  }
+
+.footer_content h3{
+    font-size: 1rem;
+    line-height: 2rem;
+
+  }
+
+.footer_bottom {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap:100px;
+    padding: 40px 100px;
+    background-color: var(--soft_black);
+    font-size: 0.9rem;
+    font-family:"Raleway", sans-serif;
+    color: white;
+  }
+  
+.footer_bottom .redesSociales {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+.footer_bottom .redesSociales a{
+    text-decoration: none;
+    color:white;
+  }
+
+.footer_bottom .redesSociales a:hover{
+    color:var(--orange);
+    transition: all 0.3s;
+  }
+
+/******************************************************* HOME ***************************************************************/
 
 main.home {
     margin-top: 100px; /* ajusta según la altura de header */
@@ -180,7 +248,7 @@ main.home .main_text{
     position: absolute;
     top: 50px;
     left: 400px; /* move right */
-    background-color: var(--hover);
+    background-color: var(--blue);
     opacity: 0.8;
 }
   
@@ -209,7 +277,7 @@ main.home .main_text{
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
-    max-width: 1200px;
+    max-width: 90%;
     margin-inline: auto;
     padding: 0 10px;
 }
@@ -236,8 +304,7 @@ main.home .main_text{
 }
 
 .noticias h2 {
-    background-color: var(--hover);
-    width: 95%;
+    background-color: var(--blue);
     padding-left:5px;
     color: white;
     font-size: 1.7rem;
@@ -266,64 +333,95 @@ main.home .main_text{
     transition: all 0.3s;
 }
 
-/*Footer*/
-.footerBox {
-    width: 100%; /* or 1000px, adjust as needed */
-    margin: 0 auto;
-  }
 
-.footer_content {
-    display: flex ;
-    gap: 100px;
-    padding: 100px 100px;
-    background-color:var(--soft_black);
-    font-family:"Raleway", sans-serif;
-    color: white;
-  }
+/* publicaciones para descargar y video en Youtube*/
 
-  .footer_content a {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-decoration: none;
-    color: white;
+
+.publicaciones {
+    background-color: var(--blue);
+    display: flex;
+    gap: 40px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.documentoBox {
+    width: 70%;
   }
   
-  .footer_content a:hover {
-    color:var(--orange);
-    transition: all 0.3s ;
+.videoBox {
+    width: 30%;
   }
 
-  .footer_content h3{
-    font-size: 1rem;
-    line-height: 2rem;
-
-  }
-
-  .footer_bottom {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    gap:100px;
-    padding: 40px 100px;
-    background-color: var(--soft_black);
-    font-size: 0.9rem;
-    font-family:"Raleway", sans-serif;
+.documentoBox h2 {
+    font-size: 1.7rem;
+    background-color: var(--blue);
     color: white;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.documento {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+  
+.documento h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
   }
   
-  .footer_bottom .redesSociales {
-    display: flex;
-    gap: 15px;
-    list-style: none;
+.documento p {
+    margin-bottom: 10px;
+    line-height: 1.2rem;
+    color: var(--soft-black);
   }
-
-  .footer_bottom .redesSociales a{
+  
+.documento a {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
     text-decoration: none;
-    color:white;
+    font-weight: 400;
+    margin-left: 80%;
   }
-
-  .footer_bottom .redesSociales a:hover{
-    color:var(--orange);
+  
+.documento a:hover {
+    background-color: var(--blue);
     transition: all 0.3s;
   }
+  
 
+  .videoBox h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .videoBox a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .videoBox a:hover {
+    text-decoration: none;
+    color: var(--orange);
+    transition: all 0.3s;
+  }
+  
+  .video {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 95%;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px #aaa;
+  }
+  
