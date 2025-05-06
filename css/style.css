@@ -582,148 +582,6 @@ main.contacto  p {
     background-color: var(--blue);
     transition: 0.3s;
   }
-  /***************************************** RESPONSIVE *****************************************/
-
-/***************************************** BASE STYLES (header y footer) *****************************************/
-
-.drawer {
-  display: none;
-  color: var(--soft_black);
-  font-size: 2rem;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-#ckbox {
-  display: none;
-}
-
-nav .menu {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav .submenu {
-  background-color: white;
-  text-align: left;
-}
-
-nav li a {
-  color: var(--soft_black);
-  padding: 10px 15px;
-  display: block;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  color: var(--orange);
-  transition: 0.5s;
-}
-
-nav .menu > li {
-  display: inline-block;
-  min-width: 100px;
-}
-
-nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 150px;
-}
-
-nav li:hover > ul {
-  display: block;
-}
-
-nav li ul li {
-  position: relative;
-}
-
-nav #button_registrar,
-nav #button_iniciar {
-  display: inline-block;
-  min-width: 10vw;
-  background-color: var(--orange);
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  margin: 0;
-}
-
-nav #button_iniciar {
-  background-color: white;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-}
-
-/* Footer */
-.footerBox {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.footer_content {
-  display: flex;
-  gap: 100px;
-  padding: 100px 100px;
-  background-color: var(--soft_black);
-  font-family: "Raleway", sans-serif;
-  color: white;
-}
-
-.footer_content .titulo {
-  color: var(--orange);
-  line-height: 2rem;
-}
-
-.footer_content a {
-  font-size: 1rem;
-  line-height: 1.5;
-  text-decoration: none;
-  color: white;
-}
-
-.footer_content a:hover {
-  color: var(--orange);
-  transition: all 0.3s;
-}
-
-.footer_content h3 {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.footer_bottom {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  gap: 100px;
-  padding: 40px 100px;
-  background-color: var(--soft_black);
-  font-size: 0.9rem;
-  font-family: "Raleway", sans-serif;
-  color: white;
-}
-
-.footer_bottom .redesSociales {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  font-size: 1.2rem;
-}
-
-.footer_bottom .redesSociales a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer_bottom .redesSociales a:hover {
-  color: var(--orange);
-  transition: all 0.3s;
-}
 
 /*********************************************** RESPONSIVE ****************************************************/
 
@@ -807,8 +665,18 @@ nav #button_iniciar {
   }
 
   nav #button_iniciar,#button_registrar{
-    max-width: 14vw;
-    font-size: 0.8rem;
+  
+      min-width: 12vw;
+      max-width: 15vw;
+      background-color: var(--orange);
+      border: none;
+      border-radius: 0.2rem;
+      color: white;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      margin: 0;
+    }
 
   }
 
@@ -837,7 +705,7 @@ nav #button_iniciar {
     justify-content: center;
     flex-wrap: wrap;
   }
-}
+
 
 /* Tablet - Horizontal */
 
@@ -895,7 +763,7 @@ nav #button_iniciar {
   }
 }
 
-/* 5. Movil - Horizontal */
+/* Movil - Horizontal */
 
 @media (max-width: 800px) and (orientation: landscape) {
   nav .menu {
