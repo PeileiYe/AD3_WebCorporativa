@@ -5,11 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*color: 
-orange: for button & icon
-hover: for button & icon hover
-
-*/
 :root{
     --primary:rgb(18, 56, 56);
     --blue:rgb(99, 136, 144);
@@ -145,14 +140,14 @@ nav .icon{
 /******************************************************* Footer*************************************************************/
 .footerBox {
     width: 100%; 
-    margin: 0 auto;
   }
 
 .footer_content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 40px;
     padding: 80px 100px;
     background-color: var(--soft_black);
@@ -162,9 +157,9 @@ nav .icon{
   
 .footer_content .info,
 .footer_content .links,
-.footer_content .recoursos {
-    flex: 1;
-    min-width: 200px;
+.footer_content .recoursos {  
+
+    max-width: 30%;
 }
   
 
@@ -176,7 +171,7 @@ nav .icon{
 
 .footer_content a {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.5rem;
     text-decoration: none;
     color: white;
 }
@@ -225,7 +220,7 @@ nav .icon{
 /******************************************************* HOME ***************************************************************/
 
 main.home {
-    margin-top: 100px; /* ajusta según la altura de header */
+    margin-top: 100px; 
     font-family:"Raleway", sans-serif;
   }
 
@@ -279,7 +274,7 @@ main.home .main_text{
     height: 450px;
     position: absolute;
     top: 50px;
-    left: 400px; /* move right */
+    left: 400px;
     background-color: var(--blue);
     opacity: 0.8;
 }
@@ -737,9 +732,6 @@ main.contacto  p {
     text-align: center;
   }
 
-  .footer_content > div {
-    width: 45%;
-  }
 
   .footer_bottom {
     flex-direction: column;
@@ -798,7 +790,7 @@ main.contacto  p {
   }
 }
 
- /********************************CONTACTO**************************/ 
+ /******************************** CONTACTO ******************************/ 
 
 @media (max-width: 768px) {
   main.contacto {
@@ -826,8 +818,8 @@ main.contacto  p {
 
   .formulario .campo,
   .formulario .campo_corto {
-    width: 100% !important;
-    min-width: 100% !important;
+    width: 100%;
+    min-width: 100%;
   }
 
   .formulario input,
