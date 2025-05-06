@@ -658,7 +658,7 @@ main.contacto  p {
     padding: 1rem;
     z-index: 1000;
     min-width: 180px;
-    transform: translateY(2rem) translateX(-6rem);
+    transform: translateY(2rem) translateX(-15rem);
     border-radius: 0.5rem;
   }
 
