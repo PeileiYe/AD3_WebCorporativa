@@ -67,7 +67,8 @@ ul{
 
 nav .menu{
     margin-top:20px;
-    text-align: center;}
+    text-align: center;
+  }
 
 nav .submenu{
     background-color: white;
@@ -111,7 +112,8 @@ nav #button_registrar{
     font-weight: 600;
     text-align: center;
     padding: 10px 15px;
-    margin-left: 40px;
+
+   
 }
 
 nav #button_registrar:hover{
@@ -127,7 +129,7 @@ nav #button_iniciar{
     color:var(--orange--);
     font-weight: 600;
     padding: 10px 15px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 nav #button_iniciar:hover{
@@ -596,7 +598,7 @@ main.contacto  p {
   .footer_content,
   .footer_bottom {
     max-width: 1300px;
-    margin: 0 auto;
+    margin:0;
   }
 }
 
