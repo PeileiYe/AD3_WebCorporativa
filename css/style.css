@@ -149,13 +149,25 @@ nav .icon{
   }
 
 .footer_content {
-    display: flex ;
-    gap: 100px;
-    padding: 100px 100px;
-    background-color:var(--soft_black);
-    font-family:"Raleway", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 100px;
+    background-color: var(--soft_black);
+    font-family: "Raleway", sans-serif;
     color: white;
-  }
+}
+  
+.footer_content .info,
+.footer_content .links,
+.footer_content .recoursos {
+    flex: 1;
+    min-width: 200px;
+}
+  
+
 .footer_content .titulo{
     color:var(--orange);
     line-height: 2rem;
@@ -191,6 +203,7 @@ nav .icon{
     font-family:"Raleway", sans-serif;
     color: white;
   }
+  
   
 .footer_bottom .redesSociales {
     display: flex;
