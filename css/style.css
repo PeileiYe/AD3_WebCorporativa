@@ -600,6 +600,7 @@ main.contacto  p {
 
 /*********************************************** RESPONSIVE ****************************************************/
 
+/********************** HEADER AND FOOTER**************************/
 /* >1300px */
 @media (min-width: 1300px) {
   body {
@@ -797,6 +798,64 @@ main.contacto  p {
   }
 }
 
-  
+ /********************************CONTACTO**************************/ 
 
-  
+@media (max-width: 768px) {
+  main.contacto {
+    padding: 10px;
+    margin-top: 100px;
+  }
+
+  .formulario {
+    width: 95%;
+    padding: 20px;
+    border-width: 5px;
+  }
+
+  .formulario fieldset {
+    padding: 15px;
+  }
+
+  .formulario legend {
+    font-size: 1rem;
+  }
+
+  .formulario .fila {
+    flex-direction: column;
+  }
+
+  .formulario .campo,
+  .formulario .campo_corto {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    font-size: 1rem;
+  }
+
+  .formulario .privacidad {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .formulario .privacidad input {
+    width: auto;
+  }
+
+  .formulario button {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .formulario .buttonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
