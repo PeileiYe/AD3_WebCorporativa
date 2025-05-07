@@ -159,7 +159,7 @@ nav .icon{
 .footer_content .links,
 .footer_content .recoursos {  
 
-    max-width: 30%;
+    max-width: 30%; /* estos segmentos de footer deberian colocarse en tres columnas en la misma fila, pero no lo consigo. no entiendo*/
 }
   
 
@@ -595,7 +595,7 @@ main.contacto  p {
 
 /*********************************************** RESPONSIVE ****************************************************/
 
-/********************** HEADER AND FOOTER**************************/
+/********************** HEADER & FOOTER**************************/
 /* >1300px */
 @media (min-width: 1300px) {
   body {
@@ -609,7 +609,7 @@ main.contacto  p {
     max-width: 1300px;
     margin:0;
   }
-}
+} /* Para que la página no se estira demasiado en pantallas super grandes*/
 
 /* Tablet - Vertical */
 @media (max-width: 768px) and (orientation: portrait) {
