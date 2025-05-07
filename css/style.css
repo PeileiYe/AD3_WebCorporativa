@@ -256,8 +256,10 @@ main.home .main_text{
 
 .main_text .decoration {
     width: 50%;
-    padding: 40px;
+    padding: 0px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden; 
 }
 
 /* circulos de decoracion para la foto*/
@@ -265,7 +267,10 @@ main.home .main_text{
     position: relative;
     width: 100%;
     height: 300px; 
+    height: 100%; 
+    overflow: hidden;
 }
+
 
 .circle {
     position: absolute;
@@ -274,9 +279,9 @@ main.home .main_text{
   
  
 .circle.big {
-    width: 450px;
-    height: 450px;
-    top: 50px;
+    width: 500px;
+    height: 500px;
+    top: 80px;
     left: 400px; 
     background-color: var(--blue);
     opacity: 0.8;
@@ -733,10 +738,14 @@ main.contacto  p {
     text-align: center;
   }
 
-  .main_text .texto,
-  .main_text .decoration {
+  .main_text .texto {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
+  }
+
+
+  .main_text .decoration {
+    display: none;
   }
 
   .foto_noticia {
@@ -768,6 +777,12 @@ main.contacto  p {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .footer_content .info,
+  .footer_content .recoursos,
+  .footer_content .links{
+    width: 100%;
   }
 }
 
@@ -820,6 +835,13 @@ main.contacto  p {
     gap: 20px;
     padding: 40px 20px;
     text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .footer_content .info,
+  .footer_content .recoursos,
+  .footer_content .links{
+    width: 100%;
   }
 
   .footer_bottom {
@@ -840,9 +862,14 @@ main.contacto  p {
     text-align: center;
   }
 
-  .main_text .texto,
-  .main_text .decoration {
+  .main_text .texto {
     width: 100%;
+    padding:20px;
+  }
+
+
+  .main_text .decoration {
+    display: none;
   }
 
   .foto_noticia {
@@ -870,6 +897,13 @@ main.contacto  p {
     flex-direction: column;
     text-align: center;
   }
+
+  .footer_content .info,
+  .footer_content .recoursos,
+  .footer_content .links{
+    width: 100%;
+  }
+
 }
 
 /* Movil vertical: 576px portrait */
@@ -885,7 +919,6 @@ main.contacto  p {
     width: 100%;
     padding: 10px;
   }
-
 
 
   .main_text .decoration {
@@ -921,6 +954,12 @@ main.contacto  p {
     padding: 20px;
     gap: 20px;
     text-align: center;
+  }
+
+  .footer_content .info,
+  .footer_content .recoursos,
+  .footer_content .links {
+    width: 100%;
   }
 
   .footer_bottom {
