@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Quiénes Somos</title>
 </head>
 <body>
@@ -59,23 +59,57 @@
     </nav>
   </header>
 
-  <main>
+  <main class="home">
+    <!-- Sección introductoria -->
     <section class="main_text">
-      <h1>Quiénes Somos</h1>
-      <p>Somos una agencia multidisciplinar con un enfoque global e inclusivo. Nuestro equipo está formado por profesionales especializados en distintas áreas, comprometidos con la calidad y la atención personalizada.</p>
-      <p>Ofrecemos servicios de:</p>
-      <ul>
-        <li>Traducción profesional en múltiples idiomas</li>
-        <li>Formación en idiomas extranjeros para empresas y particulares</li>
-        <li>Consultoría cultural y lingüística</li>
-        <li>Guía turística y acompañamiento a visitantes internacionales</li>
-      </ul>
-      <p>Creemos en la comunicación efectiva como herramienta para conectar culturas, formar ciudadanos globales y facilitar el éxito de nuestros clientes.</p>
+      <div class="texto">
+        <h1 class="rojo">Quiénes Somos</h1>
+        <h3>Compromiso, profesionalidad y visión global</h3>
+        <p>Fundada con la visión de conectar culturas a través del lenguaje, nuestra empresa nació como un pequeño grupo de traductores apasionados por la comunicación efectiva. Desde sus inicios, hemos apostado por la calidad, el detalle y un enfoque humano en cada uno de nuestros servicios.</p>
+        <p> adada </p>
+        <p>Hoy, somos una empresa consolidada con presencia internacional, aliándonos con clientes de diversos sectores para proporcionar soluciones lingüísticas, formativas y culturales que transforman negocios y personas en un mundo cada vez más interconectado.</p>
+      </div>
+      <div class="decoration">
+        <img src="img/1.jpg" alt="Equipo de trabajo" /> <!--buscar cómo adaptar la imagen a un tamaño más reducido-->
+        <div class="circleBox">
+          <div class="circle big"></div>
+          <div class="circle medium"></div>
+          <div class="circle small"></div>
+        </div>
+      </div>
     </section>
-    <section class="image">
-        <img src="" alt="">
+  
+    <!-- Sección El Equipo -->
+    <section class="equipo" style="padding: 60px 10%; font-family: 'Raleway', sans-serif;">
+      <h2 class="rojo" style="margin-bottom: 40px;">El Equipo</h2>
+      <div class="miembros" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+        
+        <!-- Miembro 1 -->
+        <div class="miembro" style="flex: 1 1 300px; max-width: 400px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+          <img src="img/5.jpg" alt="Nombre del miembro 1" style="width: 100%; height: auto;">
+          <div style="padding: 20px;">
+            <h3 style="color: var(--primary); margin-bottom: 10px;">Ye Peilei</h3>
+            <p style="color: var(--soft_black); line-height: 1.5;">
+              Traductora senior con más de 10 años de experiencia en traducción jurídica y técnica. Su formación en derecho internacional y lingüística aplicada le permite ofrecer soluciones precisas y culturales para contextos exigentes.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Miembro 2 -->
+        <div class="miembro" style="flex: 1 1 300px; max-width: 400px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+          <img src="img/4.jpg" alt="Nombre del miembro 2" style="width: 100%; height: auto;">
+          <div style="padding: 20px;">
+            <h3 style="color: var(--primary); margin-bottom: 10px;">Gonzalo Lozano</h3>
+            <p style="color: var(--soft_black); line-height: 1.5;">
+              Especialista en formación lingüística y consultoría intercultural. Ha diseñado e impartido programas de idiomas para empresas multinacionales, con un enfoque didáctico moderno y eficaz adaptado a cada cliente.
+            </p>
+          </div>
+        </div>
+  
+      </div>
     </section>
   </main>
+  
 
   <footer>
     <div class="footerBox">
