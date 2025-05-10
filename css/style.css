@@ -605,6 +605,68 @@ main.contacto  p {
     transition: 0.3s;
   }
 
+/************************************************* NOSOTROS *****************************************************/
+
+
+.equipo {
+  padding: 60px 10%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.titulo-equipo {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.miembros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.tarjeta {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.imagen-miembro {
+  width: 100%;
+  height: auto;
+}
+
+.contenido-miembro {
+  padding: 20px;
+}
+
+.nombre-miembro {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.descripcion-miembro {
+  color: var(--soft_black);
+  line-height: 1.5;
+}
+
+.img-nosotros {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /************************************************ SERVICIOS *****************************************************/
 
